@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Excluir Conta – Finely</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #060a0a;
+      color: #e0e0e0;
+      line-height: 1.8;
+    }
+    header {
+      background: #0d1414;
+      border-bottom: 1px solid #10b981;
+      padding: 24px 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #10b981;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header span {
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 620px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+    .card {
+      background: #0d1414;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      color: #f9fafb;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .card p {
+      color: #9ca3af;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+    .warning {
+      background: #1c1008;
+      border: 1px solid #92400e;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .warning span {
+      color: #f59e0b;
+      font-size: 1.1rem;
+    }
+    .warning p {
+      color: #d97706;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      color: #9ca3af;
+      font-size: 0.95rem;
+    }
+    ul li { margin-bottom: 6px; }
+    .steps {
+      counter-reset: step;
+      list-style: none;
+      margin: 0 0 16px 0;
+      padding: 0;
+    }
+    .steps li {
+      counter-increment: step;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      color: #9ca3af;
+      font-size: 0.95rem;
+    }
+    .steps li::before {
+      content: counter(step);
+      background: #10b981;
+      color: #060a0a;
+      font-weight: 700;
+      font-size: 0.8rem;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .email-box {
+      background: #060a0a;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 8px;
+    }
+    .email-box p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 4px;
+    }
+    .email-box a {
+      color: #10b981;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .email-box a:hover { text-decoration: underline; }
+    .subject {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #1f2937;
+    }
+    .subject p { margin-bottom: 2px; }
+    .subject code {
+      color: #e0e0e0;
+      font-size: 0.9rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #064e3b;
+      color: #10b981;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    footer {
+      text-align: center;
+      color: #4b5563;
+      font-size: 0.85rem;
+      padding: 32px;
+      border-top: 1px solid #1f2937;
+    }
+    a { color: #10b981; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Finely</h1>
+  <span>/ Excluir Conta</span>
+</header>
+
+<main>
+
+  <div class="card">
+    <span class="badge">Ação irreversível</span>
+    <h2>Solicitar exclusão de conta</h2>
+    <p>Você pode solicitar a exclusão da sua conta e de todos os seus dados a qualquer momento. Após a solicitação, seus dados serão removidos dos nossos servidores em até <strong style="color:#e0e0e0">30 dias</strong>.</p>
+
+    <div class="warning">
+      <span>⚠️</span>
+      <p>A exclusão da conta é permanente e irreversível. Todos os seus dados financeiros, histórico e configurações serão apagados definitivamente.</p>
+    </div>
+
+    <p>O que será excluído:</p>
+    <ul>
+      <li>Sua conta e dados de perfil (nome, e-mail)</li>
+      <li>Todos os dados financeiros importados</li>
+      <li>Histórico de transações e relatórios</li>
+      <li>Configurações e preferências</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Como solicitar a exclusão</h2>
+
+    <ol class="steps">
+      <li>Envie um e-mail para o endereço abaixo com o assunto indicado</li>
+      <li>Inclua no corpo do e-mail o endereço de e-mail cadastrado na sua conta</li>
+      <li>Aguarde a confirmação — responderemos em até 5 dias úteis</li>
+      <li>Seus dados serão excluídos em até 30 dias após a confirmação</li>
+    </ol>
+
+    <div class="email-box">
+      <p>Envie para:</p>
+      <a href="mailto:privacidade@finely.com.br">privacidade@finely.com.br</a>
+      <div class="subject">
+        <p>Assunto do e-mail:</p>
+        <code>Solicitação de exclusão de conta</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Dúvidas?</h2>
+    <p>Se tiver alguma dúvida sobre o processo de exclusão ou sobre seus dados, entre em contato:</p>
+    <ul>
+      <li>E-mail: <a href="mailto:privacidade@finely.com.br">privacidade@finely.com.br</a></li>
+      <li>Site: <a href="https://www.finely.com.br" target="_blank">www.finely.com.br</a></li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Finely. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
